@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "outDir": "/dist/types",
+    "declarationDir": "./types",
     "strict": true,
     "baseUrl": ".",
     "jsx": "react-jsx"
