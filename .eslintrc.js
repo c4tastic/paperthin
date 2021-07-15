@@ -1,15 +1,6 @@
 module.exports = {
   root: true,
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: ['./tsconfig.json'],
-  },
-  plugins: [
-    '@typescript-eslint',
-    'prettier',
-    'import',
-    'eslint-plugin-no-explicit-type-exports',
-  ],
+  plugins: ['prettier', 'eslint-plugin-no-explicit-type-exports'],
   settings: {
     'import/resolver': {
       node: {
@@ -19,7 +10,6 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'prettier',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
@@ -28,6 +18,5 @@ module.exports = {
   ],
   rules: {
     'no-explicit-type-exports/no-explicit-type-exports': 2,
-    'functional/prefer-readonly-type': ['error', { allowLocalMutation: true }],
   },
 }
