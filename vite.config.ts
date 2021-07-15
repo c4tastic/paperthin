@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import { name } from './package.json'
 import { resolve } from 'path'
+import { defineConfig } from 'vite'
 import typescript from '@rollup/plugin-typescript'
+import { name } from './package.json'
 
 export default defineConfig({
   build: {

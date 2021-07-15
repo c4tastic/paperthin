@@ -4,8 +4,10 @@
     "strict": true,
     "baseUrl": ".",
     "jsx": "react-jsx",
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
   },
-  "include": ["src"],
+  "include": ["src", "vite.config.ts"],
   "exclude": ["node_modules"]
 }
