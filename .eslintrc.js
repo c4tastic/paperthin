@@ -1,6 +1,12 @@
+/**
+ * @type {import('eslint').Linter.Config}
+ */
 module.exports = {
   root: true,
   plugins: ['prettier', 'eslint-plugin-no-explicit-type-exports'],
+  parserOptions: {
+    project: ['./tsconfig.json', './tsconfig.vite.json'],
+  },
   settings: {
     'import/resolver': {
       node: {
