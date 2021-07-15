@@ -8,21 +8,23 @@
     "Mathieu Lavoie <mathieulavoie94@gmail.com>"
   ],
   "license": "MIT",
-  "main": "dist/cjs/index.cjs.js",
-  "module": "dist/esm/index.esm.js",
-  "types": "dist/types",
+  "types": "./dist/types/index.d.ts",
+  "main": "./dist/paperthin.umd.js",
+  "module": "./dist/paperthin.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/paperthin.es.js",
+      "require": "./dist/paperthin.umd.js"
+    }
+  },
   "scripts": {
-    "build": "rollup -c"
+    "build": "vite build"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@m4thieulavoie/linting": "^0.0.11",
-    "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^19.0.0",
-    "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-typescript": "^8.2.1",
     "@types/react": "^17.0.11",
-    "@types/rollup": "^0.54.0",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
     "eslint": "^7.29.0",
@@ -31,8 +33,8 @@
     "eslint-plugin-no-explicit-type-exports": "^0.11.10",
     "eslint-plugin-prettier": "^3.4.0",
     "react": "^17.0.2",
-    "rollup": "^2.52.2",
-    "typescript": "^4.3.4"
+    "typescript": "^4.3.4",
+    "vite": "^2.4.2"
   },
   "peerDependencies": {
     "react": "^17.0.2"

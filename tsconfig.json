@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "declarationDir": "./types",
+    "target": "ESNext",
     "strict": true,
     "baseUrl": ".",
     "jsx": "react-jsx",
