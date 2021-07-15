@@ -9,7 +9,7 @@ interface WrapperProps<T> {
   readonly events?: ReadonlyMap<string, EventListenerOrEventListenerObject>
 }
 
-const removeClassName = <T>(props?: AllHTMLAttributes<T>) => ({
+const removeClassName = <T>(props?: WrapperProps<T>['props']) => ({
   ...props,
   class: props?.className,
   className: undefined,
