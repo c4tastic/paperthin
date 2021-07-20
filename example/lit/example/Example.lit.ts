@@ -9,9 +9,6 @@ export class SimpleExample extends LitElement implements SimpleExampleProps {
 
   static styles = css`
     p {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-size: 2em;
     }
   `

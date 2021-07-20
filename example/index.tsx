@@ -1,7 +1,4 @@
 import { render } from 'react-dom'
-import { ExampleReact } from './react/Example.react'
+import { App } from './react/App'
 
-render(
-  <ExampleReact msg="test"></ExampleReact>,
-  document.getElementById('root')
-)
+render(<App></App>, document.getElementById('root'))
