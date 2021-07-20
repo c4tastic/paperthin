@@ -5,7 +5,11 @@ module.exports = {
   root: true,
   plugins: ['prettier', 'eslint-plugin-no-explicit-type-exports'],
   parserOptions: {
-    project: ['./tsconfig.json', './tsconfig.vite.json'],
+    project: [
+      './tsconfig.json',
+      './tsconfig.vite.json',
+      './example/tsconfig.example.json',
+    ],
   },
   settings: {
     'import/resolver': {

@@ -1,4 +1,7 @@
 {
-  "extends": "./tsconfig",
-  "include": ["vite.config.ts"]
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["DOM"]
+  },
+  "include": ["vite.config.ts", "example/vite.*.ts"]
 }

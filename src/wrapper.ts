@@ -1,9 +1,14 @@
-import type { AllHTMLAttributes, MutableRefObject, ReactNode } from 'react'
+import type {
+  AllHTMLAttributes,
+  ForwardedRef,
+  MutableRefObject,
+  ReactNode,
+} from 'react'
 import { createElement, useEffect } from 'react'
 
 interface WrapperProps<T> {
   readonly tagName: string
-  readonly ref: MutableRefObject<T>
+  readonly ref: ForwardedRef<T>
   readonly props?: AllHTMLAttributes<T>
   readonly children?: ReactNode
   readonly events?: ReadonlyMap<string, EventListenerOrEventListenerObject>
@@ -15,6 +20,10 @@ const removeClassName = <T>(props?: WrapperProps<T>['props']) => ({
   className: undefined,
 })
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const isMutableRefObject = <T>(ref: any): ref is MutableRefObject<T> =>
+  'current' in ref
+
 export const createWrapper = <T extends HTMLElement>(
   // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   wrapperProps: WrapperProps<T>
@@ -24,13 +33,17 @@ export const createWrapper = <T extends HTMLElement>(
   useEffect(() => {
     const entries = events?.entries() ?? []
 
-    for (const [name, evt] of entries) {
-      ref.current.addEventListener(name, evt)
+    if (ref && isMutableRefObject(ref) && entries) {
+      for (const [name, evt] of entries) {
+        ref.current?.addEventListener(name, evt)
+      }
     }
 
     return () => {
-      for (const [name, evt] of entries) {
-        ref.current.removeEventListener(name, evt)
+      if (ref && isMutableRefObject(ref)) {
+        for (const [name, evt] of entries) {
+          ref?.current?.removeEventListener(name, evt)
+        }
       }
     }
   }, [])
