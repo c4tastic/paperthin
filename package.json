@@ -19,7 +19,7 @@
   },
   "scripts": {
     "build": "vite build",
-    "lint": "eslint src"
+    "format": "eslint . --ext .ts --fix"
   },
   "devDependencies": {
     "@m4thieulavoie/linting": "^0.0.11",
@@ -36,6 +36,7 @@
     "eslint-plugin-inclusive-language": "^2.1.1",
     "eslint-plugin-no-explicit-type-exports": "^0.11.10",
     "eslint-plugin-prettier": "^3.4.0",
+    "lit": "^2.0.0-rc.2",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "rollup": "^2.53.2",
