@@ -33,7 +33,7 @@ export const createWrapper = <T extends HTMLElement>(
   useEffect(() => {
     const entries = events?.entries() ?? []
 
-    if (ref && isMutableRefObject(ref) && entries) {
+    if (ref && isMutableRefObject(ref)) {
       for (const [name, evt] of entries) {
         ref.current?.addEventListener(name, evt)
       }
