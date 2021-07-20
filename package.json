@@ -1,5 +1,5 @@
 {
-  "name": "paperthin",
+  "name": "@c4tastic/paperthin",
   "version": "1.0.0",
   "description": "a thin react wrapper for web components",
   "repository": "git@github.com:c4tastic/paperthin.git",
@@ -49,5 +49,8 @@
   },
   "peerDependencies": {
     "react": "^17.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
