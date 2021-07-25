@@ -29,7 +29,39 @@ import { WebComponentTag as tagName } from 'some/model/file'
 export const ReactComponentWrapper = forwardRef<
   WebComponentClazz | null,
   WebComponentProps
+>(({ children, ...props }, ref) =>
+  createWrapper<WebComponentClazz>({ tagName, children, props, ref })
+)
+
+// Alternatively, if your component has a default slot, you can pass `children` along
+
+export const ReactComponentWithChildrenWrapper = forwardRef<
+  WebComponentClazz | null,
+  WebComponentProps
 >((props, ref) => createWrapper<WebComponentClazz>({ tagName, props, ref }))
+```
+
+### Work with slotted elements
+
+On top of the default slot, you can also forward `ReactElement` props to actual slot elements with the help of the `slottedNode` helper function.
+
+```tsx
+export const ReactComponentWrapper = forwardRef<
+  WebComponentClazz | null,
+  WebComponentProps
+>(({ emoji, children, ...props }, ref) =>
+  createWrapper<WebComponentClazz>({
+    tagName,
+    props,
+    children: (
+      <>
+        {children}
+        {emoji && slottedNode(emoji, 'emoji')}
+      </>
+    ),
+    ref,
+  })
+)
 ```
 
 ## Try it

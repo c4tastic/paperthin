@@ -1,1 +1,1 @@
-export { createWrapper } from './wrapper'
+export { createWrapper, slottedNode } from './wrapper'

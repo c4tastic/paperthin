@@ -2,9 +2,10 @@ import type {
   AllHTMLAttributes,
   ForwardedRef,
   MutableRefObject,
+  ReactElement,
   ReactNode,
 } from 'react'
-import { createElement, useEffect } from 'react'
+import { cloneElement, createElement, useEffect } from 'react'
 
 interface WrapperProps<T> {
   readonly tagName: string
@@ -13,6 +14,12 @@ interface WrapperProps<T> {
   readonly children?: ReactNode
   readonly events?: ReadonlyMap<string, EventListenerOrEventListenerObject>
 }
+
+export const slottedNode = (
+  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
+  node: ReactElement,
+  slot: string
+): ReturnType<typeof cloneElement> => cloneElement(node, { slot })
 
 const removeClassName = <T>(props?: WrapperProps<T>['props']) => ({
   ...props,
@@ -25,7 +32,6 @@ const isMutableRefObject = <T>(ref: any): ref is MutableRefObject<T> =>
   'current' in ref
 
 export const createWrapper = <T extends HTMLElement>(
-  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   wrapperProps: WrapperProps<T>
 ): ReturnType<typeof createElement> => {
   const { tagName, ref, children, events, props } = wrapperProps
