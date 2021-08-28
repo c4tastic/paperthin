@@ -256,10 +256,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@m4thieulavoie/linting@0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@m4thieulavoie/linting/-/linting-0.0.11.tgz#723666903fcd4d0466424dde4f191cfa95725e20"
-  integrity sha512-xb/pfyyFfBTulDO0b0Iqxvv8nvrlNT9nVnP4NuYj/xjNeqrKZFS3psvAJMi+MMxNASTM6PwJ/KQHqVKSUjetAw==
+"@m4thieulavoie/linting@0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@m4thieulavoie/linting/-/linting-0.0.12.tgz#abf353bbd83239b7250511d2e487e13014d4e699"
+  integrity sha512-r+LSz7v57BYXXsw28KsLZGTtQy47OB9bn6u1gHl1t4mQDJ69IECsOjbESsqIORPdtvCwrVBiBT2bxrCzh7WvhA==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
