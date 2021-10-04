@@ -1033,10 +1033,10 @@ eslint-plugin-inclusive-language@2.1.1:
   dependencies:
     humps "^2.0.1"
 
-eslint-plugin-no-explicit-type-exports@0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-no-explicit-type-exports/-/eslint-plugin-no-explicit-type-exports-0.12.0.tgz#ca80f848802de9c2aabb36871bd77065e2a9d434"
-  integrity sha512-Or30Hs5DAjd+cpmNKNeIs2TznEZEs332yNTKlvVKFM1emut44rAA36j6K7OhLylLOvdnNa8GD5xNJIhZ61IC5g==
+eslint-plugin-no-explicit-type-exports@0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-no-explicit-type-exports/-/eslint-plugin-no-explicit-type-exports-0.12.1.tgz#67c2ab8f005a7bfe451f9ce1430d8cbbe30d9a01"
+  integrity sha512-m1v/f+LYVygCY735KfCovkoXYPbZH5zxEj/tuLOnMwX/qbJEJoRb9evul88Ois5HidvKbiMdMg/tXU55Ki++jg==
   dependencies:
     "@typescript-eslint/experimental-utils" "^2.27.0"
     eslint-import-resolver-node "^0.3.2"
