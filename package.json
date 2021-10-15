@@ -23,7 +23,7 @@
     "format": "eslint . --ext .ts --fix"
   },
   "devDependencies": {
-    "@m4thieulavoie/linting": "0.0.12",
+    "@m4thieulavoie/linting": "0.2.1",
     "@rollup/plugin-typescript": "8.2.5",
     "@types/eslint": "7.28.1",
     "@types/node": "16.7.1",
