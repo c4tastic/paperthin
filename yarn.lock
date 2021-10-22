@@ -254,10 +254,10 @@
   resolved "https://registry.yarnpkg.com/@lit/reactive-element/-/reactive-element-1.0.0.tgz#7b6e6a85709cda0370c47e425ac2f3b553696a4b"
   integrity sha512-Kpgenb8UNFsKCsFhggiVvUkCbcFQSd6N8hffYEEGjz27/4rw3cTSsmP9t3q1EHOAsdum60Wo64HvuZDFpEwexA==
 
-"@m4thieulavoie/linting@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@m4thieulavoie/linting/-/linting-0.2.2.tgz#a155e222cccc89f700e4d3cedc797f58f9ed4fab"
-  integrity sha512-Hp+TFaX5JHcQKQQKsv1MXqZU9tQBdSzwiKye+SysmLtCzXP+uqEmvtfDSBKKK9ask/gedXcdlBRyuGtmB3SsJQ==
+"@m4thieulavoie/linting@0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@m4thieulavoie/linting/-/linting-0.2.4.tgz#e44399fb10e7a0e20961b9c7ab4c9c20594304f4"
+  integrity sha512-E9BMg/yh9GcsElyIkpYGq3hYjjng1cIwnl+j3A7Lz/lJQrCKlsls/MAocpeKfrcgOv/n4m1qUlKi4qne9TaqyQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
