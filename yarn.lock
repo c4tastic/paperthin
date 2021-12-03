@@ -1238,6 +1238,13 @@ eslint-plugin-inclusive-language@2.1.1:
   dependencies:
     humps "^2.0.1"
 
+eslint-plugin-inclusive-language@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-inclusive-language/-/eslint-plugin-inclusive-language-2.2.0.tgz#e016846fc7b25ad39f7836979966564e20dfc402"
+  integrity sha512-RzPeSjuw1NYiTSQyFzYl2uTDgiPQWDUmFCiGAMCITmXN627DsWZ9rR4KNzrb8vnk/gLL5qdYr8oxh44xsrcO5Q==
+  dependencies:
+    humps "^2.0.1"
+
 eslint-plugin-no-explicit-type-exports@0.12.1:
   version "0.12.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-no-explicit-type-exports/-/eslint-plugin-no-explicit-type-exports-0.12.1.tgz#67c2ab8f005a7bfe451f9ce1430d8cbbe30d9a01"
