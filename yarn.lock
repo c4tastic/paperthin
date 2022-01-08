@@ -951,6 +951,13 @@ deepmerge-ts@^1.1.3:
   dependencies:
     is-plain-object "^5.0.0"
 
+deepmerge-ts@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/deepmerge-ts/-/deepmerge-ts-2.0.1.tgz#08e3bf4b535736a360c57fb162ddbffc253fe9f2"
+  integrity sha512-7xeG0xMleW+gyrtUsdOeR6tCLwkyYDh3koIuvc8TxBcDh3WlaBQiEbFwEzk8clKomJZMhmoyxo7Y9CRrrrLVlg==
+  dependencies:
+    is-plain-object "^5.0.0"
+
 define-properties@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/define-properties/-/define-properties-1.1.3.tgz#cf88da6cbee26fe6db7094f61d870cbd84cee9f1"
@@ -1206,6 +1213,15 @@ eslint-plugin-functional@4.0.2:
   dependencies:
     "@typescript-eslint/experimental-utils" "^5.0.0"
     deepmerge-ts "^1.1.3"
+    escape-string-regexp "^4.0.0"
+
+eslint-plugin-functional@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-functional/-/eslint-plugin-functional-4.1.1.tgz#181b6c491fb73f05887cf51349118eeef0681bd5"
+  integrity sha512-FgYMsScNCDilsxpYLboYLkY/y36VfocUD02tB1CJc8q4d+/H06ADKa9v6Dmk8kKlzIIW4V/wfNOVuxNusa0avw==
+  dependencies:
+    "@typescript-eslint/experimental-utils" "^5.0.0"
+    deepmerge-ts "^2.0.1"
     escape-string-regexp "^4.0.0"
 
 eslint-plugin-import@2.25.3:
