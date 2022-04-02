@@ -39,7 +39,7 @@
     "eslint-plugin-no-explicit-type-exports": "0.12.1",
     "eslint-plugin-prettier": "4.0.0",
     "lit-element": "3.2.0",
-    "prettier": "2.6.1",
+    "prettier": "2.6.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "rollup": "2.70.1",
