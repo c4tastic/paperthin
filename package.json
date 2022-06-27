@@ -37,7 +37,7 @@
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-inclusive-language": "2.2.0",
     "eslint-plugin-no-explicit-type-exports": "0.12.1",
-    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-prettier": "4.1.0",
     "lit-element": "3.2.0",
     "prettier": "2.7.1",
     "react": "17.0.2",
