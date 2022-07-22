@@ -1,5 +1,5 @@
+import React, { forwardRef } from 'react'
 import type { HTMLAttributes, ReactElement } from 'react'
-import { forwardRef } from 'react'
 import { createWrapper, slottedNode } from '../../../src'
 import type { ExampleWithChildren } from '../../lit/example/ExampleWithChildren.lit'
 import { WITH_CHILDREN_TAG_NAME as tagName } from '../../lit/example/Example.models'
