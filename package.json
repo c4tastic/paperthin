@@ -13,7 +13,8 @@
   "module": "./dist/paperthin.es.js",
   "exports": {
     ".": {
-      "import": "./dist/paperthin.es.js",
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/paperthin.mjs",
       "require": "./dist/paperthin.umd.js"
     }
   },
