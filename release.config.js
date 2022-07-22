@@ -113,11 +113,11 @@ module.exports = {
       {
         assets: [
           {
-            path: 'dist/reading-time-estimator.js',
+            path: 'dist/paperthin.mjs',
             label: 'ES js distribution',
           },
           {
-            path: 'dist/reading-time-estimator.js',
+            path: 'dist/paperthin.umd.js',
             label: 'UMD js distribution',
           },
         ],
